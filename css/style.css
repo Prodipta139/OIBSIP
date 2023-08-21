@@ -1,0 +1,656 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.root {
+    --navbar-height: 59px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar */
+#navbar {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+/* Navigation bar: Logo and Image */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+
+    height: 60px;
+    width: 130px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 40px;
+}
+
+nav ul li a {
+    color: rgb(234, 223, 223);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    border-radius: 10px;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: rgb(101, 63, 15);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.h-primary {
+    margin-top: 20%;
+    font-size: 30px;
+    color: rgb(216, 242, 250);
+    padding: 10px 100px;
+    margin: 10px 100px;
+    text-align: center;
+}
+
+.h-primary p {
+    font-size: 30px;
+    margin-top: 20px;
+    margin: 10px 20px;
+    padding: 10px 20px;
+}
+
+.h-primary h1 {
+    font-size: 60px;
+    margin-top: 10px;
+    margin: 10px 10px;
+    padding: 10px 0px;
+}
+
+.btn {
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: white;
+    background-color: blue;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 17px;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.btn:hover {
+    color: blue;
+    background-color: white;
+}
+
+/* About Us */
+#aboutus {
+    display: flex;
+}
+
+#aboutus-container::before {
+    content: "";
+    background: url('../images/about.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 60%;
+    width: 70%;
+    z-index: -1;
+    opacity: 0.55;
+    margin: 50px 210px;
+}
+
+.h-primary-center {
+    margin: 100px;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.h-secondary-center {
+    margin: 50px 250px;
+    color: rgb(0, 0, 0);
+    font-family: 'Lato', sans-serif;
+
+}
+
+.center {
+    margin: 30px 250px;
+    color: rgb(3, 10, 109);
+    padding: 10px 160px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+/* Our Room */
+.box {
+    display: flex;
+}
+
+.h-primary-room {
+    margin: 80px;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.room-details {
+    margin: 10px 10px;
+    padding: 12px 0px;
+}
+
+.h-secondary-room {
+    font-size: 2.3rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.room-person {
+    font-size: 1.2rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.room-details p {
+    font-size: 1.1rem;
+    font-family: 'Kanit', sans-serif;
+    margin: 18px 15px;
+}
+
+.room-img img {
+
+    height: 300px;
+    margin: 20px 20px;
+    display: block;
+    padding: 12px 100px;
+
+
+}
+
+.btn1 {
+    border-radius: 10px;
+    border: 2px solid rgb(74, 111, 247);
+    padding: 5px 12px;
+    margin: 10px 12px;
+    color: blue;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(162, 189, 240);
+    box-shadow: 10px 10px 5px #7b7a7a;
+}
+
+.btn1:hover {
+    color: white;
+    background-color: rgb(152, 152, 236);
+}
+
+#different-room::before {
+    content: "";
+    background: url('../images/Room\ bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 170%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+/* Our Service */
+.h-primary-service {
+    margin: 80px 20px;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#services {
+    margin: 12px 100px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid rgb(26, 32, 201);
+    padding: 20px 20px;
+    margin: 14px 65px;
+    border-radius: 28px;
+    background: #d8d9f6;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#services .box img {
+    height: 180px;
+    margin: auto;
+    display: block;
+
+}
+
+.h-secondary-service {
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin: 4px 10px;
+}
+
+.service-details {
+    color: rgb(23, 106, 132);
+    margin: 0px 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+/* Testimonials */
+.test-box {
+    display: flex;
+    margin: 10px 12px;
+    padding: 4px 12px;
+    border: 2px solid rgb(99, 151, 138);
+    border-radius: 20px;
+    background-color: rgb(165, 196, 238);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    cursor: pointer;
+}
+
+.h-primary-test {
+    text-align: center;
+    margin: 50px 12px;
+    font-size: 1.8rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+#tests {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 300px;
+}
+
+#tests .test-box img {
+    border-radius: 50%;
+    width: 120px;
+    height: 150px;
+
+}
+
+.person-name {
+    margin: 10px 100px;
+}
+
+.person-experience {
+    margin: 50px 100px;
+}
+
+.person-experience p {
+    font-size: 1.1rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.person-name h2 {
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn2 {
+    border-radius: 10px;
+    border: 2px solid rgb(74, 111, 247);
+    padding: 10px 12px;
+    margin: 10px 630px;
+    color: blue;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(162, 189, 240);
+}
+
+.btn2:hover {
+    color: white;
+    background-color: rgb(152, 152, 236);
+}
+
+/* Contact Us */
+
+#contact-container::before {
+    content: "";
+    background: url('../images/contact.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 118%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.24;
+}
+
+.h-primary-form {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Kanit', sans-serif;
+    margin: 40px 12px;
+}
+
+#contact-box-form input,
+#contact-box-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact-box-form {
+    display: flex;
+    margin: 12px 140px;
+    padding: 10px 25px;
+}
+
+#contact-box-form .form-group {
+
+    margin: 4px 95px;
+    padding: 4px 12px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn3 {
+    margin: 12px 105px;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: blue;
+    background-color: rgb(162, 189, 240);
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid rgb(74, 111, 247);
+    box-shadow: 10px 10px 5px #7b7a7a;
+}
+
+.btn3:hover {
+    color: white;
+    background-color: rgb(152, 152, 236);
+}
+
+.box-img img {
+    border-radius: 15%;
+    width: 45px;
+    height: 40px;
+}
+
+.box-img {
+    display: flex;
+    margin: 10px 12px;
+    padding: 10px 12px;
+}
+
+.all-details {
+    margin: 12px 10px;
+    padding: 0px 10px;
+}
+
+.map-contact {
+    margin: 10px;
+    padding: 12px;
+}
+
+/* footer */
+.foot {
+    text-align: center;
+    background-color: rgb(72, 68, 68);
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* ------------------------------css for small screen------------------------------- */
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .h-primary {
+        margin-top: 10%;
+        margin: 20px 100px;
+        padding: 10px 20px;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .h-primary p {
+        font-size: 18px;
+        margin-left: -180px;
+        padding: 0px 20px;
+
+    }
+
+    .h-primary h1 {
+        font-size: 40px;
+        margin-left: -180px;
+        padding: 3px 75px;
+
+    }
+
+    #navbar {
+        background-image: url('../images/bg.jpg');
+        height: 100%;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background-color: rgb(174, 147, 48);
+        color: #fff;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .h-primary .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-left: -180px;
+    }
+
+    .h-primary-center {
+        justify-content: center;
+        font-size: 30px;
+
+    }
+
+    #aboutus-container::before {
+        content: "";
+        background: url('../images/about.jpg') no-repeat center center;
+        position: absolute;
+        height: 60%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.55;
+        margin: 50px 0px;
+    }
+
+    .h-secondary-center {
+        font-size: 20px;
+        align-items: center;
+        margin: 20px;
+        justify-content: center;
+    }
+
+    .center {
+        align-items: center;
+        margin: 5px;
+        padding: 15px;
+    }
+
+    .room-img img {
+        height: 140px;
+        width: 150px;
+        margin: 10px 3px;
+        padding: 10px 10px;
+
+    }
+
+    .room-details {
+        margin-left: 10px;
+        padding-left: 10px;
+        height: 10%;
+    }
+
+    .h-secondary-room {
+        font-size: 30px;
+    }
+
+    .room-details p {
+        margin: 10px 0px;
+        padding-top: 10px;
+        margin-right: 10px;
+        padding-right: 15px;
+        width: 100%;
+    }
+
+    .btn1 {
+        margin: 6px 5px;
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    #services .box {
+
+        width: 90%;
+        justify-content: center;
+    }
+
+    #services .box img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #tests {
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    .test-box {
+        width: 460%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .person-experience {
+        margin: 50px 0px;
+        padding: 20px 0px;
+
+    }
+
+
+    .btn2 {
+
+        font-size: 18px;
+        padding: 10px 60px;
+        margin: 16px 100px;
+    }
+
+
+    #contact-box-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px 0px;
+        padding: 8px 0px;
+    }
+
+    #contact-container::before {
+        content: "";
+        background: url('../images/contact.jpg') no-repeat center center/cover;
+        position: absolute;
+        height: 160%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.24;
+    }
+
+    #contact-box-form .form-group {
+        margin: 4px 50px;
+        padding: 5px 10px;
+    }
+
+    .btn3 {
+        margin: 5px 60px;
+        padding: 5px 10px;
+    }
+
+    .foot {
+        padding: 14px 0px;
+        margin: 7px 0px;
+    }
+}
