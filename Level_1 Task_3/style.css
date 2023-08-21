@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6da47b;
+    background-color: linear-gradient(to right, #8bcb7b, #51a15a, #3c9b54);
+    color: white;
+    font-size: 1rem;
+}
+
+.container {
+    background: #938f3d;
+    background-color: linear-gradient(to right, #acc35b, #909c41, #686d2a);
+    box-shadow: 2px 2px 20px 2px #1e4e28;
+    /* width: 100%; */
+    min-width: 520px;
+    padding: 20px 25px 45px;
+    border-radius: 5px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+
+.deg-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.deg-field {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.temp-field {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+input,
+#cel {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#btn {
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #88888f, #504f58);
+    padding: 12px 80px;
+    color: white;
+    box-shadow: 2px 2px 10px 2px #b5b6b5;
+    cursor: pointer;
+    margin-left: 140px;
+    margin-top: 10px;
+    transition: all .3s ease-in;
+}
+
+#btn:hover {
+    background: linear-gradient(to bottom, #f0f0f3, #a8a7a9);
+    ;
+    color: black;
+}
+
+.result {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.res-head {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.cel-val {
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    transition: all .45s ease;
+}

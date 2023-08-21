@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Temperature Converter</h1>
+        </div>
+        <div class="temp">
+            <!-- -----------input-field---------------- -->
+            <div class="deg-type">
+
+                <!-- ----------for degrees----------------- -->
+                <div class="deg-field">
+                    <label for="deg">Degrees</label>
+                    <input type="number" name="deg" id="deg">
+                </div>
+
+                <!-- ----------for option------------------- -->
+                <div class="temp-field">
+                    <label for="temp-type">Type</label>
+                    <select name="temperature" id="temp-type" autocomplete="on">
+                        <option value="select-type" id="select-type">Select Type</option>
+                        <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin" id="kelvin">Kelvin</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button id="btn">Convert</button>
+
+            <!-- ------------result----------------- -->
+            <div class="result">
+                <span class="res-head">Result(Celsius)</span>
+                <h2 class="cel-val" id="cel"></h2>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
