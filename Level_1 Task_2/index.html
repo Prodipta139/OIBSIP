@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a347227f89.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- --------------------------------header----------------------------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi there, I'm <span>Prodipta Pal</span> <br>from Kolkata</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------About------------------------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>I am from Kolkata.I have completed my B.Tech from Netaji Subhash Engineering College.I am
+                        passionate about front-end development and competitive coding.
+                    </p>
+                    <h2 class="sub-title">Hobby</h2>
+                    <p>My hobby is painting,sketching and listening to music.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------Resume-------------------------------- -->
+    <div id="resume">
+        <div class="container">
+            <h2 class="sub-title">Resume</h2>
+            <div class="resume-list">
+                <div class="resume-col-1">
+                    <h1 class="sub-education">Education</h1>
+                    <div class="college-name">
+                        <h2>Netaji Subhash Engineering College</h2>
+                        <h4>B.Tech, Electronics and Communication Engineering<br>Got Average - 9.16 CGPA </h4>
+                    </div>
+                    <div class="school-name1">
+                        <h2>Harinavi D.V.A.S. High School</h2>
+                        <h4>12th Standard, 2019<br>Got 85.2% in 12th</h4>
+                    </div>
+                    <div class="school-name2">
+                        <h2>Sri Ramakrishna Ashrama Institute</h2>
+                        <h4>10th Standard, 2017<br>Got 86.57% in 10th</h4>
+                    </div>
+                </div>
+                <div class="resume-col-2">
+                    <h1 class="sub-skill">Skills</h1>
+                    <div class="item">
+                        <div class="item-text">
+                            <h4>C</h4>
+                            <h4 class="w-90">90%</h4>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar-w-90"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-text">
+                            <h4>C++</h4>
+                            <h4 class="w-80">80%</h4>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar-w-80"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-text">
+                            <h4>HTML5</h4>
+                            <h4 class="w-90">90%</h4>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar-w-90"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-text">
+                            <h4>CSS3</h4>
+                            <h4 class="w-80">80%</h4>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar-w-80"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-text">
+                            <h4>JS</h4>
+                            <h4 class="w-60">60%</h4>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar-w-60"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-text">
+                            <h4>MySql</h4>
+                            <h4 class="w-70">70%</h4>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar-w-70"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------contact----------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; www.myportfoliowebsite.com. All rights reserved!</p>
+        </div>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
